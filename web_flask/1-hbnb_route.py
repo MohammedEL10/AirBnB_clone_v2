@@ -5,8 +5,8 @@ from flask import Flask
 
 app = Flask(__name__)
 @app.route('/hbnb/', strict_slashes=False)
-def Hello_HBNB:
+def HBNB():
     """return some text"""
-    return "Hello HBNB"
+    return "HBNB"
 if __name__ == "__main__":
-    app.run(host=0.0.0.0, port=5000)
+    app.run(host='0.0.0.0', port=5000)
