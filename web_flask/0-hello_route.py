@@ -6,4 +6,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def Hello_HBNB():
-    return "Hello, HBNB"
+    return "<p>Hello, HBNB!</p>"
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)
