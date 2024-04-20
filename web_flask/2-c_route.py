@@ -21,10 +21,10 @@ def HBNB():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def text():
+def show_text(is_fun):
 
     """return some text"""
-    return "C"
+    return f" C {is fun}"
 
 
 if __name__ == "__main__":
