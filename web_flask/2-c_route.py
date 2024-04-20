@@ -18,10 +18,9 @@ def hello():
 
 @app.route('/c/<text>')
 def c_text(text):
-
     """replace text with variable."""
-    text=text.replace('_', ' ')
-    return "C {}".format(text)
+    text = text.replace('_', ' ')
+    return 'C {}'.format(text)
 
 
 if __name__ == "__main__":
