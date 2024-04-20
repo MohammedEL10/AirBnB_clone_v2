@@ -6,9 +6,14 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/hbnb/c/<text>', strict_slashes=False)
-def C_text():
+@app.route('/hbnb/', strict_slashes=False)
+def HBNB():
 
+
+    """return some text"""
+    return "HBNB"
+def text():
+    
 
     """return some text"""
     return "C"
