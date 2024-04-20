@@ -21,10 +21,13 @@ def HBNB():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def string(text):
+def c_text(text):
+
+    """replace underscor with space"""
+    text=text.replace('_', ' ')
 
     """return some text"""
-    return "C"
+    return "C {}".format(text)
 
 
 if __name__ == "__main__":
