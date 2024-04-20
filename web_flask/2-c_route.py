@@ -24,8 +24,6 @@ def HBNB():
 def c_text(text):
     """replace text with variable."""
     text=text.replace('_', ' ')
-
-    """return some text"""
     return "C {}".format(text)
 
 
