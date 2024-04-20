@@ -21,7 +21,7 @@ def HBNB():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def C(text):
+def string(text):
 
     """return some text"""
     return "C is %s" % text
