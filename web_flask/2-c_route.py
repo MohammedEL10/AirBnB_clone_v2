@@ -6,17 +6,17 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
+@app.route('/')
 def Hello_HBNB():
     return "Hello HBNB!"
 
 
-@app.route('/hbnb/', strict_slashes=False)
+@app.route('/hbnb/')
 def HBNB():
     return "HBNB"
 
 
-@app.route('/c/<text>', strict_slashes=False)
+@app.route('/c/<text>')
 def c_text(text):
 
     """replace text with variable."""
