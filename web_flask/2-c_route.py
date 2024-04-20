@@ -24,7 +24,7 @@ def HBNB():
 def string(text):
 
     """return some text"""
-    return "C is %s" % text
+    return "C"
 
 
 if __name__ == "__main__":
