@@ -12,6 +12,7 @@ def HBNB():
 
     """return some text"""
     return "HBNB"
+@app.route(/c/<text>, strict_slashes=False)
 def text():
     
 
