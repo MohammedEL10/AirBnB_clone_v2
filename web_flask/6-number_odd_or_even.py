@@ -45,6 +45,7 @@ def html_num(n):
 @app.route('/number_odd_or_even/<int:n>')
 def odd_or_even(n):
     n = str(n)
+    """ display different page depending on var given odd or even. """
     return render_template('6-number_odd_or_even.html', n=n)
 
 
