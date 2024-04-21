@@ -30,7 +30,7 @@ def python_text(text='is cool'):
 
 
 @app.route('/number/<int:n>')
-def n_number(n):
+def number_text(n):
     n = str(n)
     return "{} in a number".format(n)
 
