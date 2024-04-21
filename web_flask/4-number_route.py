@@ -23,10 +23,10 @@ def c_text(text):
 
 
 @app.route('/python/')
-@app.route('/python/(<text>)')
+@app.route('/python/<text>')
 def python_text(text='is cool'):
     text = text.replace('_', ' ')
-    return "Python {}".format(text)
+    return 'Python {}'.format(text)
 
 
 @app.route('/number/<int:n>')
