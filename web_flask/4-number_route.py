@@ -19,7 +19,7 @@ def Hello():
 @app.route('/c/<text>')
 def c_text(text):
     text = text.replace('_', ' ')
-    return "C {}".format(text)
+    return 'C {}'.format(text)
 
 
 @app.route('/python/')
@@ -32,7 +32,7 @@ def python_text(text='is cool'):
 @app.route('/number/<int:n>')
 def number_text(n):
     n = str(n)
-    return '{} in a number'.format(n)
+    return '{} is a number'.format(n)
 
 
 if __name__ == "__main__":
